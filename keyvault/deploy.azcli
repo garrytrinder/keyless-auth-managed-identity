@@ -1,0 +1,17 @@
+az group create \
+  --name rg-keylessauth-dev \
+  --location uksouth \
+  --tags demo=true demoname=keyless-auth
+az keyvault create \
+  --name vlt-keylessauth-dev \
+  --resource-group rg-keylessauth-dev \
+  --location uksouth \
+  --retention-days 90
+secret=`openssl rand -base64 12`
+az keyvault secret set \
+  --vault-name vlt-keylessauth-dev \
+  --name supersecret \
+  --value $secret 
+
+vaultUri=`az keyvault show --name vlt-keylessauth-dev --resource-group rg-keylessauth-dev --query "properties.vaultUri" --output tsv`
+echo $vaultUri
