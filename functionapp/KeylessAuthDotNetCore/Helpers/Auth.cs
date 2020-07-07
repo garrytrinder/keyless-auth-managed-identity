@@ -6,7 +6,7 @@
     {
         public static AzureServiceTokenProvider GetProvider()
         {
-            var connectionString = string.Empty;
+            var connectionString = "RunAs=App";
 #if DEBUG
             connectionString = $"RunAs=App;AppId={Configuration.LocalDevAppId};TenantId={Configuration.LocalDevTenantId};CertificateThumbprint={Configuration.LocalDevThumbprint};CertificateStoreLocation=CurrentUser";
 #endif
