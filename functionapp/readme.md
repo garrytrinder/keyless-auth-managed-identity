@@ -25,8 +25,7 @@ This scenario requires
 
 ## Grant Microsoft Graph App Role to Managed Identity Service Principal
 
-1. Connect to Office 365 tenant using Office 365 CLI using `m365 login` command
-1. Execute `m365 aad approleassignment add --displayName "func-keylessauth-dev" --resource "Microsoft Graph" --scope "Group.Read.All"` to assign the Microsoft Graph `Group.Read.All` application role to the Managed Identity service principal
+1. App Role is assigned as part of the deployment
 
 ## Create Service Principal & Self Signed Certificate for Local Development (Windows)
 
