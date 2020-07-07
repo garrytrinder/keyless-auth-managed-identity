@@ -12,3 +12,4 @@ if (Test-path .\publish.zip) { Remove-item .\publish.zip }
 Add-Type -assembly "system.io.compression.filesystem"
 [io.compression.zipfile]::CreateFromDirectory("$currentPath\KeylessAuthDotNetCore\bin\Release\netcoreapp3.1\publish\","$currentPath/publish.zip")
 az functionapp deployment source config-zip --name func-keylessauth-dev --resource-group rg-keylessauth-dev --src .\publish.zip
+m365 aad approleassignment add --displayName "func-keylessauth-dev" --resource "Microsoft Graph" --scope "Group.Read.All"
