@@ -16,6 +16,8 @@ This scenario requires
 
 ## Azure Function App Deployment
 
+> Active login to Azure CLI & Office 365 CLI is assumed
+
 1. Open PowerShell prompt
 1. Execute `.\deploy.ps1` to deploy Azure resources
 
@@ -41,4 +43,3 @@ This scenario requires
 1. Update `LocalDevAppId` value with `App Id`
 1. Update `LocalTenantId` value with `Tenant Id`
 1. Update `LocalThumbprint` value with `Thumbprint` 
-

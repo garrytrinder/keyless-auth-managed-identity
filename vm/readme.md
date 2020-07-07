@@ -15,6 +15,8 @@ This scenario requires
 
 ## Deploy Azure resources
 
+> Active login to Azure CLI is assumed
+
 1. Open PowerShell prompt
 1. Execute `.\deploy.ps1` to deploy Azure resources
 
