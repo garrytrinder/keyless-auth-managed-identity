@@ -23,6 +23,9 @@
             "apiVersion": "2017-07-01",
             "name": "[parameters('logicAppName')]",
             "location": "[parameters('location')]",
+            "identity": {
+                "type": "SystemAssigned"
+            },
             "properties": {
                 "definition": {
                     "$schema": "https://schema.management.azure.com/schemas/2016-06-01/Microsoft.Logic.json",
