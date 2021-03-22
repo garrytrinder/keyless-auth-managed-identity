@@ -5,6 +5,7 @@
     <UserSecretsId>86dfea54-6f38-4268-8f11-67b03133faa8</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.3.0" />
     <PackageReference Include="Microsoft.Azure.Services.AppAuthentication" Version="1.5.0" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.8" />
   </ItemGroup>
