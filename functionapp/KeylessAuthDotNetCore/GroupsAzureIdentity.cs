@@ -40,7 +40,7 @@ namespace KeylessAuthDotNetCore
 
                 var accessToken = accessTokenRequest.Token;
 
-                log.LogInformation(accessToken);
+                //log.LogInformation(accessToken);
 
                 var httpClient = new HttpClient()
                 {
